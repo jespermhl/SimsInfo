@@ -14,6 +14,8 @@
 
 ## :star2: About the Project
 
+This is a small test for a Sims Info site that I'm making with [Bootstrap](https://getbootstrap.com).
+
 ## :handshake: Contact
 
 Jesper Mahel [slicers_latent0c@icloud.com](mailto:slicers_latent0c@icloud.com)
