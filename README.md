@@ -1,7 +1,7 @@
 <div align='center'>
 
 <h1>Sims Info</h1>
-<h4> <a href=https://simsinfo.2ix.de>View Demo</a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Request Feature </a> </h4>
+<h4> <a href=https://simsinfo.12hp.de>View Demo</a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Request Feature </a> </h4>
 
 
 </div>
