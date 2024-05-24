@@ -88,6 +88,7 @@
             <div class="mb-3 form-floating">
                <input
                   type="email"
+                  name="email"
                   class="form-control"
                   id="emailInput"
                   placeholder="name@example.com" />
@@ -99,6 +100,7 @@
             <div class="mb-3 form-floating">
                <textarea
                   class="form-control"
+                  name="message"
                   placeholder="Leave a message here"
                   id="messageInput"
                   style="height: 140px"></textarea>
@@ -107,10 +109,12 @@
             <div class="mb-3 form-check">
                <input
                   type="checkbox"
+                  name="privacycheck"
                   class="form-check-input"
                   id="exampleCheck1" />
                <label class="form-check-label" for="exampleCheck1">
-                  I have read and accept the <a href="/privacypolicy/">Privacy Policy</a>.
+                  I have read and accept the
+                  <a href="/privacypolicy/">Privacy Policy</a>.
                </label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
