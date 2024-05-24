@@ -17,23 +17,23 @@ function loadFooter() {
 
 function addActiveClassToNavLinks() {
    var currentUrl = window.location.href;
-   console.log(currentUrl);
+   console.log("Current URL: "+currentUrl);
    currentUrl = currentUrl.replace("localhost", "");
-   console.log(currentUrl);
+   console.log("Removed \"localhost\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("simsinfo.2ix.de", "");
-   console.log(currentUrl);
+   console.log("Removed \"simsinfo.2ix.de\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("https://", "");
-   console.log(currentUrl);
+   console.log("Removed \"https://\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("http://", "");
-   console.log(currentUrl);
+   console.log("Removed \"http://\". Result: "+currentUrl);
    currentUrl = currentUrl.replace(":8000", "");
-   console.log(currentUrl);
+   console.log("Removed \":8000\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("index.html", "");
-   console.log(currentUrl);
+   console.log("Removed \"index.html\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("simsinfo.netlify.app", "");
-   console.log(currentUrl);
+   console.log("Removed \"simsinfo.netlify.app\". Result: "+currentUrl);
    currentUrl = currentUrl.replace("simsinfohub.com", "");
-   console.log(currentUrl);
+   console.log("Removed \"simsinfohub.com\". Result: "+currentUrl);
 
    fetch("/scripts/menulinks.json")
       .then((response) => response.json())
