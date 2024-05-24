@@ -32,6 +32,8 @@ function addActiveClassToNavLinks() {
    console.log(currentUrl);
    currentUrl = currentUrl.replace("simsinfo.netlify.app", "");
    console.log(currentUrl);
+   currentUrl = currentUrl.replace("simsinfohub.com", "");
+   console.log(currentUrl);
 
    fetch("/scripts/menulinks.json")
       .then((response) => response.json())
