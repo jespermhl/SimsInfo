@@ -4,7 +4,7 @@
 <h4> <a href=https://simsinfo.netlify.appe>View Demo</a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Request Feature </a> </h4>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4c5647b2-310d-4c10-bea6-b8b812353a73/deploy-status)](https://app.netlify.com/sites/simsinfo/deploys)
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
@@ -15,7 +15,12 @@
 
 ## :star2: About the Project
 
-This is a small test for a Sims Info site that I'm making with [Bootstrap](https://getbootstrap.com).
+This is my Sims Info Site / Wiki that I use to learn new things.
+
+## :gear: Technologies used
+[Bootstrap](https://getbootstrap.com) - Extensive list of components and Bundled Javascript plugins.
+You can find more in [the colophon](https://simsinfohub.com/colophon/).
+
 
 ## :handshake: Contact
 
