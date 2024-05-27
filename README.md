@@ -11,7 +11,9 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
+- [Built with](#gear-built-with)
 - [Contact](#handshake-contact)
+- [License](#book-license)
 
 
 ## :star2: About the Project
@@ -28,6 +30,19 @@ This is my Sims Info Site / Wiki that I use to learn new things.
 
 ## :handshake: Contact
 
-Jesper Mahel [slicers_latent0c@icloud.com](mailto:jesper@simsinfohub.com)
+Jesper Mahel [jesper@simsinfohub.com](mailto:jesper@simsinfohub.com)
 
 Project Link: [https://github.com/k1nsej/SimsInfo/tree/main](https://github.com/k1nsej/SimsInfo/tree/main)
+
+
+## :book: License
+Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
