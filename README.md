@@ -5,6 +5,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4c5647b2-310d-4c10-bea6-b8b812353a73/deploy-status)](https://app.netlify.com/sites/simsinfo/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/k1nsej/SimsInfo)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/k1nsej/SimsInfo)
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
