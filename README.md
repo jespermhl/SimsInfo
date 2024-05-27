@@ -16,12 +16,9 @@
 
 This is my Sims Info Site / Wiki that I use to learn new things.
 
-## :gear: Technologies used
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+## :gear: Built with
+![Static Badge](https://img.shields.io/badge/Bootstrap-%237952B3?style=flat&logo=Bootstrap&logoColor=%23ffffff&color=%237952B3&link=https%3A%2F%2Fgetbootstrap.com)
+
 
 
 
