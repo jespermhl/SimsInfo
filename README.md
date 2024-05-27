@@ -6,6 +6,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4c5647b2-310d-4c10-bea6-b8b812353a73/deploy-status)](https://app.netlify.com/sites/simsinfo/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/k1nsej/SimsInfo)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/k1nsej/SimsInfo)
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
@@ -36,7 +37,6 @@ Project Link: [https://github.com/k1nsej/SimsInfo/tree/main](https://github.com/
 
 
 ## :book: License
-Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
