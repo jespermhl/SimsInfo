@@ -4,7 +4,7 @@
 <h4> <a href=https://simsinfo.netlify.appe>View Demo</a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/k1nsej/SimsInfo/issues"> Request Feature </a> </h4>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4c5647b2-310d-4c10-bea6-b8b812353a73/deploy-status)](https://app.netlify.com/sites/simsinfo/deploys)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/k1nsej/SimsInfo)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=k1nsej)](https://github.com/k1nsej/SimsInfo)
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
