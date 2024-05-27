@@ -23,6 +23,6 @@ You can find more in [the colophon](https://simsinfohub.com/colophon/).
 
 ## :handshake: Contact
 
-Jesper Mahel [slicers_latent0c@icloud.com](mailto:slicers_latent0c@icloud.com)
+Jesper Mahel [slicers_latent0c@icloud.com](mailto:jesper@simsinfohub.com)
 
 Project Link: [https://github.com/k1nsej/SimsInfo/tree/main](https://github.com/k1nsej/SimsInfo/tree/main)
