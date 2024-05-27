@@ -8,6 +8,7 @@
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/k1nsej/SimsInfo)
 [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/k1nsej/SimsInfo)
+![GitHub Repo stars](https://img.shields.io/github/stars/k1nsej/SimsInfo?style=flat)
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
