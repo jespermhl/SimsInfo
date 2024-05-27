@@ -20,7 +20,8 @@ This is my Sims Info Site / Wiki that I use to learn new things.
 ![Static Badge](https://img.shields.io/badge/Bootstrap-%237952B3?style=flat&logo=Bootstrap&logoColor=%23ffffff&link=https%3A%2F%2Fgetbootstrap.com)
 ![Static Badge](https://img.shields.io/badge/HTML5-%23E34F26?style=flat&logo=HTML5&logoColor=%23ffffff&link=https%3A%2F%2Fhtml.spec.whatwg.org)
 ![Static Badge](https://img.shields.io/badge/CSS3-%231572B6?style=flat&logo=CSS3&logoColor=%23ffffff&link=https%3A%2F%2Fw3.org%2FTR%2FCSS%2F%23css)
-![Static Badge](https://img.shields.io/badge/JavaScript-%231572B6?style=flat&logo=JavaScript&logoColor=%23ffffff&link=https%3A%2F%2Fecma-international.org%2Fpublications-and-standards%2Fstandards%2Fecma-262%2F)
+![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=flat&logo=JavaScript&logoColor=%23ffffff&link=https%3A%2F%2Fecma-international.org%2Fpublications-and-standards%2Fstandards%2Fecma-262%2F)
+
 
 
 
