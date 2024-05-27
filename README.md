@@ -18,9 +18,7 @@ This is my Sims Info Site / Wiki that I use to learn new things.
 
 ## :gear: Built with
 ![Static Badge](https://img.shields.io/badge/Bootstrap-%237952B3?style=flat&logo=Bootstrap&logoColor=%23ffffff&link=https%3A%2F%2Fgetbootstrap.com)
-
 ![Static Badge](https://img.shields.io/badge/HTML5-%23E34F26?style=flat&logo=HTML5&logoColor=%23ffffff&link=https%3A%2F%2Fhtml.spec.whatwg.org)
-
 ![Static Badge](https://img.shields.io/badge/CSS3-%231572B6?style=flat&logo=CSS3&logoColor=%23ffffff&link=https%3A%2F%2Fw3.org%2FTR%2FCSS%2F%23css)
 
 
