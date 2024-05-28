@@ -86,43 +86,49 @@ for (let i = 0; i < 3; i++) {
       name: "copyright",
       content: "Jesper Mahel"
    });
-   
+
    addNoScriptElement();
-   
+
    addElementToHead("meta", {
       charset: "utf-8"
    });
-   
+
    addElementToHead("meta", {
       name: "viewport",
       content: "width=device-width, initial-scale=1"
    });
-   
+
    addElementToHead("link", {
       href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
       rel: "stylesheet",
-      integrity: "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH",
+      integrity:
+         "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH",
       crossorigin: "anonymous"
    });
-   
+
    addElementToHead("link", {
       rel: "stylesheet",
       href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
    });
-   
+
    addElementToHead("script", {
       src: "/scripts/menufooter.js",
       async: ""
    });
-   
+
+   addElementToHead("script", {
+      src: "/scripts/posthog.js",
+      async: ""
+   });
+
    addElementToHead("link", {
       href: "/static/css/styles.css",
       rel: "stylesheet"
    });
 
-   addElementToHead("script", {
-      name: "defer",
-      "data-domain": "simsinfohub.com",
-      src: "https://plausible.io/js/script.js"
-   });
+// addElementToHead("script", {
+//    name: "defer",
+//    "data-domain": "simsinfohub.com",
+//    src: "https://plausible.io/js/script.js"
+// });
 }
