@@ -119,4 +119,10 @@ for (let i = 0; i < 3; i++) {
       href: "/static/css/styles.css",
       rel: "stylesheet"
    });
+
+   addElementToHead("script", {
+      name: "defer",
+      "data-domain": "simsinfohub.com",
+      src: "https://plausible.io/js/script.js"
+   });
 }
