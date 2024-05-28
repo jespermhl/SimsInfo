@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             "[Read more]",
             '<a class="icon-link" href="' + item.link + '">Read more <i class="bi bi-box-arrow-up-right"></i></a>'
          );
+         description = description.replace(
+            "[read more]",
+            '<a class="icon-link" href="' + item.link + '">read more <i class="bi bi-box-arrow-up-right"></i></a>'
+         );
 
          var cardHtml = `
             <div class="col">
