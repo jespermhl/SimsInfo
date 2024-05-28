@@ -116,18 +116,18 @@ for (let i = 0; i < 3; i++) {
       async: ""
    });
 
-   addElementToHead("script", {
-      src: "/scripts/posthog.js",
+   /*addElementToHead("script", {
+      src: "/scripts/blog.js",
       async: ""
-   });
-   
+   });*/
+
    addElementToHead("script", {
       async: "",
       defer: "",
       src: "https://beampipe.io/js/tracker.js",
       "data-beampipe-domain": "https://beampipe.io/js/tracker.js"
    });
-   
+
    // addElementToHead("script", {
    //    name: "defer",
    //    "data-domain": "simsinfohub.com",
