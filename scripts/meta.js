@@ -120,15 +120,17 @@ for (let i = 0; i < 3; i++) {
       src: "/scripts/posthog.js",
       async: ""
    });
-
-   addElementToHead("link", {
-      href: "/static/css/styles.css",
-      rel: "stylesheet"
+   
+   addElementToHead("script", {
+      async: "",
+      defer: "",
+      src: "https://beampipe.io/js/tracker.js",
+      "data-beampipe-domain": "https://beampipe.io/js/tracker.js"
    });
-
-// addElementToHead("script", {
-//    name: "defer",
-//    "data-domain": "simsinfohub.com",
-//    src: "https://plausible.io/js/script.js"
-// });
+   
+   // addElementToHead("script", {
+   //    name: "defer",
+   //    "data-domain": "simsinfohub.com",
+   //    src: "https://plausible.io/js/script.js"
+   // });
 }
