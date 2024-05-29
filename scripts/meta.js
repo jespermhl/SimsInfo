@@ -120,6 +120,11 @@ for (let i = 0; i < 3; i++) {
       src: "/scripts/blog.js",
       async: ""
    });*/
+   
+   addElementToHead("link", {
+      rel: "stylesheet",
+      href: "/static/css/styles.css"
+   });
 
    addElementToHead("script", {
       async: "",
