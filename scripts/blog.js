@@ -33,27 +33,37 @@ document.addEventListener("DOMContentLoaded", function () {
          // Replace placeholders in description with actual HTML anchor tags
          var description = item.description.replace(
             "[here]",
-            '<a class="icon-link" href="' + item.link + '">here <i class="bi bi-box-arrow-up-right"></i></a>'
+            '<a class="icon-link" href="' +
+               item.link +
+               '">here <i class="bi bi-box-arrow-up-right"></i></a>'
          );
          description = description.replace(
             "[Read more]",
-            '<a class="icon-link" href="' + item.link + '">Read more <i class="bi bi-box-arrow-up-right"></i></a>'
+            '<a class="icon-link" href="' +
+               item.link +
+               '">Read more <i class="bi bi-box-arrow-up-right"></i></a>'
          );
          description = description.replace(
             "[read more]",
-            '<a class="icon-link" href="' + item.link + '">read more <i class="bi bi-box-arrow-up-right"></i></a>'
+            '<a class="icon-link" href="' +
+               item.link +
+               '">read more <i class="bi bi-box-arrow-up-right"></i></a>'
          );
 
          var cardHtml = `
             <div class="col">
                 <div class="card h-100">
-                    <img src="${item.image_src}" class="card-img-top" alt="..." />
+                    <div class="card-header">
+                        ${item.type}
+                    </div>
+                    <img src="${item.image_src}" class="card-img-top" alt="${item.alt}" />
                     <div class="card-body">
                         <h5 class="card-title">${item.title}</h5>
                         <p class="card-text">${description}</p>
+                        <!--<div class="d-grid gap-2"><a href="#" class="btn btn-primary">Go somewhere</a></div>-->
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Published on ${item.published_date}</small>
+                        <small class="text-body-secondary">Published on ${item.published_date} by ${item.author}</small>
                     </div>
                 </div>
             </div>
