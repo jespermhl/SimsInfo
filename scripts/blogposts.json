@@ -1,4 +1,15 @@
 [
+   // Types used: Update, Pack announcement, Sale, New Feature
+   {
+      "type": "New Feature",
+      "title": "The Sims is getting log-in rewards",
+      "image_src": "/static/images/blog/LogInRewards.png",
+      "image_alt": "An image showing content from The Sims 4, featuring various items and Sims. 1: A dartboard, a male Sim, a folded cardboard box. 2: A wooden cabinet and a female Sim. 3: Pillows and an icon with a purple face. 4: A vending machine and two Sims (an adult and a child) standing.",
+      "description": "The Sims announced a new log-in rewards feature that they call \"Events\". In the first week you'll have to log in three times, twice in the second & third week and once in the fourth, final week. But don't worry, they're starting to roll out the feature today, but the weeks won't start counting until you see the pop-up in-game. <br /> <br /> Let's get to the Items: In the first week, you can get a dart board, a layered necklace and a mini fridge with a recolor of the money trash can from the base game. In the second week you can get a one tile wide bar and a cool new hairstyle. In the third week, you will be able to get new pillows and a new trait called \"Practice makes Perfect\". In the last week you can get a vending machine! You can also see the items in the picture above. You can find a detailed tutorial (video) [here] on the EA blog.",
+      "link": "https://www.ea.com/games/the-sims/the-sims-4/news/the-sims-4-events",
+      "published_date": "May 30, 2024",
+      "author": "Jesper"
+   },
    {
       "type": "Update",
       "title": "Update May 28, 2024",
