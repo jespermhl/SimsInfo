@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Call the fetchJSONFile function to load data from the JSON file
    fetchJSONFile("/scripts/blogposts.json", function (jsonData) {
-      // Sort data by published date (assuming the date is in a consistent format)
+      // Sort data by published date
       jsonData.sort(function (a, b) {
          return new Date(b.published_date) - new Date(a.published_date);
       });
