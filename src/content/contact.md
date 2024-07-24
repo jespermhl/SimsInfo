@@ -5,7 +5,7 @@ meta-description: Contact the Sims Info Hub
 author: The Sims Info Hub Team
 ---
 
-# Colophon
+# Contact
 
 <form name="contact" method="POST" netlify>
     <div class="mb-3 form-floating">
