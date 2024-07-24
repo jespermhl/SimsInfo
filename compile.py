@@ -232,22 +232,17 @@ def generate_more_pages(pages, types):
     """
     Generates the 'More' pages for each type.
     """
-    def generate_card_list_view(title, date, path, author, snippet, image):
-        image_html = f'<img src="{image}" class="card-img-left" alt="{title}" style="width:150px; margin-right:15px;">' if image else ''
+    def generate_list_item(title, date, path, author, snippet):
         return f"""
-        <div class="card mb-3" style="display: flex; flex-direction: row; align-items: center;">
-            {image_html}
-            <div class="card-body">
-                <h5 class="card-title">{title}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Posted on {date} by {author}</h6>
-                <p class="card-text">{snippet}</p>
-                <a href="{path}" class="btn btn-primary">Read more</a>
-            </div>
+        <div class="list-group-item">
+            <h5 class="mb-1"><a href="{path}">{title}</a></h5>
+            <small class="text-muted">Posted on {date} by {author}</small>
+            <p class="mb-1">{snippet}</p>
         </div>
         """
 
     for path_key, section_title in types.items():
-        more_page_content = f"<h1>{section_title}</h1><div class='card-container mb-3'>"
+        more_page_content = f"<h1>{section_title}</h1><div class='list-group mb-3'>"
         filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
         
         for info in filtered_pages:
@@ -257,7 +252,7 @@ def generate_more_pages(pages, types):
             html_content = markdown_to_html(markdown_text)
             snippet = extract_snippet(html_content)
             
-            more_page_content += generate_card_list_view(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
+            more_page_content += generate_list_item(info['title'], info['date'], info['path'], info['author'], snippet)
         
         more_page_content += "</div>"
         
