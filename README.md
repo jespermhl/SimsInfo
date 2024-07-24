@@ -29,6 +29,7 @@ This is my Sims Info Site / Wiki that I use to learn new things.
 ![Static Badge](https://img.shields.io/badge/CSS3-%231572B6?style=flat&logo=CSS3&logoColor=%23ffffff&link=https%3A%2F%2Fw3.org%2FTR%2FCSS%2F%23css)
 ![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=flat&logo=JavaScript&logoColor=%23ffffff&link=https%3A%2F%2Fecma-international.org%2Fpublications-and-standards%2Fstandards%2Fecma-262%2F)
 ![Static Badge](https://img.shields.io/badge/Netlify-%2300C7B7?style=flat&logo=netlify&logoColor=%23ffffff&link=https%3A%2F%2Fnetlify.com)
+![Static Badge](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=ffffff&link=https%3A%2F%2Fwww.python.org%2F)
 
 
 ## :handshake: Contact
