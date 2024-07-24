@@ -4,6 +4,7 @@ meta-title: Lovestruck - Sims Info
 meta-description: Find out about the Lovestruck expansion pack
 date: July 25, 2024
 author: Jesper
+image: /assets/img/covers/ep/new/lovestruck.webp
 ---
 
 # Lovestruck
