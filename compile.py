@@ -230,7 +230,7 @@ def generate_home_page(pages):
 
 def generate_more_pages(pages, types):
     """
-    Generates the 'More' pages for each type.
+    Generates the 'More' pages for each type, sorted by slug (title).
     """
     def generate_list_item(title, date, path, author, snippet):
         return f"""
@@ -243,9 +243,12 @@ def generate_more_pages(pages, types):
 
     for path_key, section_title in types.items():
         more_page_content = f"<h1>{section_title}</h1><div class='list-group mb-3'>"
-        filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
         
-        for info in filtered_pages:
+        # Filter and sort pages
+        filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
+        sorted_pages = sorted(filtered_pages, key=lambda x: x['title'].lower())  # Sort by title (slug)
+        
+        for info in sorted_pages:
             file_path = os.path.join(CONTENT_DIR, info['path'].replace('.html', '.md'))
             with open(file_path, 'r') as f:
                 markdown_text = f.read()
