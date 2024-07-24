@@ -210,7 +210,7 @@ def generate_home_page(pages):
             homepage_content += f"""
             <div class="card" style="min-width: 300px; margin: 10px;">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                    <a href='{more_page_path}' class='btn btn-secondary'>More {section_title}</a>
+                    <a href='{more_page_path}' class='btn btn-secondary mx-4'>More {section_title}</a>
                 </div>
             </div>"""
 
