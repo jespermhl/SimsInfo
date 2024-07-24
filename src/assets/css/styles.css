@@ -20,7 +20,7 @@ main {
    gap: 1rem;
 }
 
-.card {
+.home-card {
    max-width: 20%; 
    flex: 0 0 auto; 
 }
