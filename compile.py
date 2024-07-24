@@ -166,7 +166,7 @@ def generate_home_page(pages):
     def generate_card(title, date, path, author, snippet, image):
         image_html = f'<img src="{image}" class="card-img-top" alt="{title}">' if image else ''
         return f"""
-        <div class="card" style="min-width: 300px;">
+        <div class="card" style="min-width: 300px; margin: 10px;">
             {image_html}
             <div class="card-body">
                 <h5 class="card-title">{title}</h5>
@@ -193,7 +193,7 @@ def generate_home_page(pages):
     }
 
     for path_key, section_title in types.items():
-        homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3' style='display: flex; flex-wrap: nowrap; overflow-x: auto;'>"
+        homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3' style='display: flex; flex-wrap: wrap;'>"
         filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
         
         for info in filtered_pages[:3]:
@@ -205,11 +205,16 @@ def generate_home_page(pages):
             
             homepage_content += generate_card(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
         
-        homepage_content += "</div>"
-        
         if len(filtered_pages) > 3:
             more_page_path = os.path.join('more', f"{path_key}.html")
-            homepage_content += f"<a href='{more_page_path}' class='btn btn-secondary'>More {section_title}</a>"
+            homepage_content += f"""
+            <div class="card" style="min-width: 300px; margin: 10px;">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                    <a href='{more_page_path}' class='btn btn-secondary'>More {section_title}</a>
+                </div>
+            </div>"""
+
+        homepage_content += "</div>"
 
     context = {
         'title': 'Home',
