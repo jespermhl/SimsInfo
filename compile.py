@@ -193,7 +193,7 @@ def generate_home_page(pages):
     }
 
     for path_key, section_title in types.items():
-        homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3'>"
+        homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3' style='display: flex; flex-wrap: nowrap; overflow-x: auto;'>"
         filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
         
         for info in filtered_pages[:3]:
@@ -227,10 +227,10 @@ def generate_more_pages(pages, types):
     """
     Generates the 'More' pages for each type.
     """
-    def generate_card(title, date, path, author, snippet, image):
-        image_html = f'<img src="{image}" class="card-img-top" alt="{title}">' if image else ''
+    def generate_card_list_view(title, date, path, author, snippet, image):
+        image_html = f'<img src="{image}" class="card-img-left" alt="{title}" style="width:150px; margin-right:15px;">' if image else ''
         return f"""
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card mb-3" style="display: flex; flex-direction: row; align-items: center;">
             {image_html}
             <div class="card-body">
                 <h5 class="card-title">{title}</h5>
@@ -252,7 +252,7 @@ def generate_more_pages(pages, types):
             html_content = markdown_to_html(markdown_text)
             snippet = extract_snippet(html_content)
             
-            more_page_content += generate_card(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
+            more_page_content += generate_card_list_view(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
         
         more_page_content += "</div>"
         
