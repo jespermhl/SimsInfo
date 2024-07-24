@@ -269,9 +269,9 @@ def generate_more_pages(pages, types):
         }
         
         more_page_html = render_template('base.html', context)
-        output_dir = os.path.join(DIST_DIR, 'more', path_key)
-        os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
-        save_page(more_page_html, os.path.join(output_dir, 'index.html'))
+        output_dir = os.path.join(DIST_DIR, 'more')
+        os.makedirs(output_dir, exist_ok=True)
+        save_page(more_page_html, os.path.join(output_dir, f"{path_key}.html"))
 
 def main():
     """
