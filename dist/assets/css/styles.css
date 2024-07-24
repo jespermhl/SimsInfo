@@ -21,6 +21,6 @@ main {
 }
 
 .card {
-   min-width: 120px; /* Adjust this as needed */
+   max-width: 120px; /* Adjust this as needed */
    flex: 0 0 auto; /* Ensure cards don't shrink or grow */
 }
