@@ -246,7 +246,7 @@ def generate_more_pages(pages, types):
         
         # Filter and sort pages
         filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
-        sorted_pages = sorted(filtered_pages, key=lambda x: os.path.splitext(os.path.basename(x['path']))[0].lower())  # Sort by file name (slug)
+        sorted_pages = sorted(filtered_pages, reverse=True, key=lambda x: os.path.splitext(os.path.basename(x['path']))[0].lower())  # Sort by file name (slug)
         
         for info in sorted_pages:
             file_path = os.path.join(CONTENT_DIR, info['path'].replace('.html', '.md'))
