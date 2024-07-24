@@ -17,6 +17,10 @@ main {
    display: flex;
    flex-direction: row;
    overflow-x: auto;
-   padding: 1rem;
    gap: 1rem;
+}
+
+.card {
+   min-width: 300px; /* Adjust this as needed */
+   flex: 0 0 auto; /* Ensure cards don't shrink or grow */
 }

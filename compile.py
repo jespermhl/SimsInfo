@@ -51,6 +51,7 @@ def extract_block_content(base_template, template):
     return block_content
 
 def save_page(content, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)  # Ensure the directory exists
     with open(path, 'w') as file:
         file.write(content)
 
@@ -176,13 +177,11 @@ def generate_home_page(pages):
         </div>
         """
 
-    # Collect and generate cards for each type
     homepage_content = """
     <h1>Sul sul, welcome to the Sims Info Hub!</h1>
     <p>Welcome to my little Sims information site / wiki! Have fun browsing!</p>
     """
 
-    # Define the types and their respective titles
     types = {
         'updates': 'Updates',
         'sdx-drops': 'SDX Drops',
@@ -195,19 +194,23 @@ def generate_home_page(pages):
 
     for path_key, section_title in types.items():
         homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3'>"
-        for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True):
-            if path_key in info['path']:
-                # Extract the snippet from the page content
-                file_path = os.path.join(CONTENT_DIR, info['path'].replace('.html', '.md'))
-                with open(file_path, 'r') as f:
-                    markdown_text = f.read()
-                html_content = markdown_to_html(markdown_text)
-                snippet = extract_snippet(html_content)
-                
-                homepage_content += generate_card(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
+        filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
+        
+        for info in filtered_pages[:3]:
+            file_path = os.path.join(CONTENT_DIR, info['path'].replace('.html', '.md'))
+            with open(file_path, 'r') as f:
+                markdown_text = f.read()
+            html_content = markdown_to_html(markdown_text)
+            snippet = extract_snippet(html_content)
+            
+            homepage_content += generate_card(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
+        
         homepage_content += "</div>"
+        
+        if len(filtered_pages) > 3:
+            more_page_path = os.path.join('more', f"{path_key}.html")
+            homepage_content += f"<a href='{more_page_path}' class='btn btn-secondary'>More {section_title}</a>"
 
-    # Create page context
     context = {
         'title': 'Home',
         'meta-title': 'Welcome to the Sims Info Hub',
@@ -215,9 +218,55 @@ def generate_home_page(pages):
         'content': homepage_content
     }
     
-    # Render and save the homepage
     homepage_html = render_template('base.html', context)
     save_page(homepage_html, os.path.join(DIST_DIR, 'index.html'))
+    
+    generate_more_pages(pages, types)
+
+def generate_more_pages(pages, types):
+    """
+    Generates the 'More' pages for each type.
+    """
+    def generate_card(title, date, path, author, snippet, image):
+        image_html = f'<img src="{image}" class="card-img-top" alt="{title}">' if image else ''
+        return f"""
+        <div class="card mb-3" style="max-width: 540px;">
+            {image_html}
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Posted on {date} by {author}</h6>
+                <p class="card-text">{snippet}</p>
+                <a href="{path}" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        """
+
+    for path_key, section_title in types.items():
+        more_page_content = f"<h1>{section_title}</h1><div class='card-container mb-3'>"
+        filtered_pages = [info for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True) if path_key in info['path']]
+        
+        for info in filtered_pages:
+            file_path = os.path.join(CONTENT_DIR, info['path'].replace('.html', '.md'))
+            with open(file_path, 'r') as f:
+                markdown_text = f.read()
+            html_content = markdown_to_html(markdown_text)
+            snippet = extract_snippet(html_content)
+            
+            more_page_content += generate_card(info['title'], info['date'], info['path'], info['author'], snippet, info['image'])
+        
+        more_page_content += "</div>"
+        
+        context = {
+            'title': section_title,
+            'meta-title': f"More {section_title}",
+            'meta-description': f"All items in the {section_title} category.",
+            'content': more_page_content
+        }
+        
+        more_page_html = render_template('base.html', context)
+        output_dir = os.path.join(DIST_DIR, 'more', path_key)
+        os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+        save_page(more_page_html, os.path.join(output_dir, 'index.html'))
 
 def main():
     """
