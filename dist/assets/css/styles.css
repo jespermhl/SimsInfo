@@ -12,3 +12,11 @@ body {
 main {
    flex: 1;
 }
+
+.card-container {
+   display: flex;
+   flex-direction: row;
+   overflow-x: auto;
+   padding: 1rem;
+   gap: 1rem;
+}

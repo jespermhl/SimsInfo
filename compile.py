@@ -165,7 +165,7 @@ def generate_home_page(pages):
     def generate_card(title, date, path, author, snippet, image):
         image_html = f'<img src="{image}" class="card-img-top" alt="{title}">' if image else ''
         return f"""
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card" style="min-width: 300px;">
             {image_html}
             <div class="card-body">
                 <h5 class="card-title">{title}</h5>
@@ -194,7 +194,7 @@ def generate_home_page(pages):
     }
 
     for path_key, section_title in types.items():
-        homepage_content += f"<h2>{section_title}</h2><div class='mb-3'>"
+        homepage_content += f"<h2>{section_title}</h2><div class='card-container mb-3'>"
         for page, info in sorted(pages.items(), key=lambda x: x[1]['date'], reverse=True):
             if path_key in info['path']:
                 # Extract the snippet from the page content
