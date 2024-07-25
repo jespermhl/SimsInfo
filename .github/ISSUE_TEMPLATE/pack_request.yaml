@@ -1,5 +1,5 @@
 name: Expansion Pack Request
-about: Request adding information about an expansion pack
+description: Request adding information about an expansion pack
 assignees: 
   - k1nsej
 labels: 
@@ -8,11 +8,12 @@ title: "[PACK:] "
 body:
   - type: input
     id: pack_name
-    required: true
     attributes:
       label: Pack Name
       description: What is the name of the pack?
       placeholder: Your Pack Name Here
+    validations:
+      required: true
   - type: dropdown
     id: pack_type
     attributes:
