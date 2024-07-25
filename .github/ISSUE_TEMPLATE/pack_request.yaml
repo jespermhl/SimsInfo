@@ -28,7 +28,7 @@ body:
   - type: checkboxes
     id: confirmations
     attributes:
-      label: ._.-._.-._.-._.
+      label: °._.-._.-._.-._.°
       options:
         - label: understand that submitting duplicate or inaccurate information results in the request being declined.
         - label: agree to adhere to the repository's contribution guidelines and code of conduct.
