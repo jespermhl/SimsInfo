@@ -1,0 +1,31 @@
+name: Expansion Pack Request
+about: Request adding information about an expansion pack
+assignees: k1nsej
+labels: 
+  - request
+title: "[PACK:] "
+body:
+- type: input
+    id: pack_name
+    required: true
+    attributes:
+      label: Pack Name
+      description: What is the name of the pack?
+      placeholder: Your Pack Name Here
+- type: dropdown
+    id: pack_type
+    attributes:
+      label: Pack type
+      options:
+        - EP (Expansion pack)
+        - GP (Game pack)
+        - SP (Stuff pack)
+        - K (Kit)
+    validations:
+      required: true
+- type: checkboxes
+    attributes:
+      label: I confirm that I...
+      options:
+        - label: understand that submitting duplicate or inaccurate information results in the request being declined.
+        - label: agree to adhere to the repository's contribution guidelines and code of conduct.
