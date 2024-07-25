@@ -6,14 +6,12 @@ labels:
 title: "[PACK:] "
 body:
 - type: input
-    id: pack_name
     required: true
     attributes:
       label: Pack Name
       description: What is the name of the pack?
       placeholder: Your Pack Name Here
 - type: dropdown
-    id: pack_type
     attributes:
       label: Pack type
       options:
