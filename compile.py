@@ -1,16 +1,16 @@
 import os
 import shutil
-import markdown
+import markdown 
 from bs4 import BeautifulSoup
 
 # Define paths
-SRC_DIR = 'src'
-DIST_DIR = 'dist'
-CONTENT_DIR = os.path.join(SRC_DIR, 'content')
-TEMPLATE_DIR = os.path.join(SRC_DIR, 'structure', 'templates')
-ASSETS_DIR = os.path.join(SRC_DIR, 'assets')
+SRC_DIR = 'src'  # Source directory
+DIST_DIR = 'dist'  # Output directory
+CONTENT_DIR = os.path.join(SRC_DIR, 'content')  # Content directory
+TEMPLATE_DIR = os.path.join(SRC_DIR, 'structure', 'templates')  # Template directory
+ASSETS_DIR = os.path.join(SRC_DIR, 'assets')  # Assets directory
 
-def markdown_to_html(markdown_text):
+def markdown_to_html(markdown_text):  # Convert Markdown to HTML
     md = markdown.Markdown(extensions=['meta'])
     html = md.convert(markdown_text)
     return html
